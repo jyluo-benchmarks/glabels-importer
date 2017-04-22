@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<Glabels-templates>
+  <Template brand="Test" part="1234" size="Other" width="10cm" height="5in"
+            _description="Ütf8">
+    <Meta category="label"/>
+    <Label-rectangle id="0" width="20pc" height="45pt" round="4.5pt" waste="0 pt">
+      <Markup-margin size="99m"/>
+      <Layout nx="42" ny="7" x0="4" y0="4.5" dx="11 cm" dy="49.5pt"/>
+    </Label-rectangle>
+  </Template>
+</Glabels-templates>
