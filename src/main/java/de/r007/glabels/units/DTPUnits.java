@@ -1,10 +1,9 @@
 package de.r007.glabels.units;
 
-
-import tec.uom.se.format.SimpleUnitFormat;
-
 import javax.measure.Unit;
+import javax.measure.format.UnitFormat;
 import javax.measure.quantity.Length;
+import javax.measure.spi.ServiceProvider;
 
 import static systems.uom.common.Imperial.INCH;
 
@@ -13,7 +12,8 @@ public final class DTPUnits {
 	public static final Unit<Length> PICA = INCH.divide(6);
 
 	static {
-		SimpleUnitFormat.getInstance().label(POINT, "pt");
-		SimpleUnitFormat.getInstance().label(PICA, "pc");
+		UnitFormat format = ServiceProvider.current().getUnitFormatService().getUnitFormat();
+		format.label(POINT, "pt");
+		format.label(PICA, "pc");
 	}
 }
