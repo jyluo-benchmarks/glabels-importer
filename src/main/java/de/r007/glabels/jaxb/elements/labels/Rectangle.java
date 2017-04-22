@@ -34,7 +34,4 @@ public class Rectangle extends AbstractLabel {
 	@XmlAttribute
 	@XmlJavaTypeAdapter(UnitAdapter.class)
 	public Quantity<Length> y_waste;
-
-	@XmlElement(name = "Layout")
-	public Layout layout;
 }
