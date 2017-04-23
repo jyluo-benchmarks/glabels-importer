@@ -23,4 +23,6 @@ public class TemplateEntry {
 //			@XmlElement(name = "Label-cd", type = Cd.class)
 	})
 	public AbstractLabel label;
+	@XmlAttribute(name = "equiv")
+	public String aliasForPart;
 }
