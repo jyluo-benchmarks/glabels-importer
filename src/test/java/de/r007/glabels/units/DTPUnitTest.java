@@ -1,12 +1,5 @@
 package de.r007.glabels.units;
 
-import org.testng.annotations.Test;
-
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import javax.measure.spi.QuantityFactory;
-import javax.measure.spi.ServiceProvider;
-
 import static de.r007.glabels.units.DTPUnits.PICA;
 import static de.r007.glabels.units.DTPUnits.POINT;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -16,6 +9,13 @@ import static org.hamcrest.Matchers.closeTo;
 import static systems.uom.common.Imperial.INCH;
 import static tec.uom.se.unit.MetricPrefix.CENTI;
 import static tec.uom.se.unit.Units.METRE;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import javax.measure.spi.QuantityFactory;
+import javax.measure.spi.ServiceProvider;
+
+import org.testng.annotations.Test;
 
 public class DTPUnitTest {
 	QuantityFactory<Length> factory = ServiceProvider.current().getQuantityFactory(Length.class);

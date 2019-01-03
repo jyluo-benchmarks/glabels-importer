@@ -1,14 +1,11 @@
 package de.r007.glabels.jaxb.elements.labels;
 
-
-import de.r007.glabels.jaxb.elements.Layout;
-import de.r007.glabels.jaxb.adapters.UnitAdapter;
-
 import javax.measure.Quantity;
 import javax.measure.quantity.Length;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import de.r007.glabels.jaxb.adapters.UnitAdapter;
 
 public class Rectangle extends AbstractLabel {
 	@XmlAttribute

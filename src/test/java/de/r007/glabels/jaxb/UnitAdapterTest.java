@@ -1,12 +1,5 @@
 package de.r007.glabels.jaxb;
 
-import de.r007.glabels.jaxb.adapters.UnitAdapter;
-import org.testng.annotations.Test;
-
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import javax.xml.bind.JAXBException;
-
 import static de.r007.glabels.units.DTPUnits.PICA;
 import static de.r007.glabels.units.DTPUnits.POINT;
 import static org.hamcrest.CoreMatchers.is;
@@ -16,6 +9,14 @@ import static systems.uom.common.Imperial.INCH;
 import static tec.uom.se.unit.MetricPrefix.CENTI;
 import static tec.uom.se.unit.MetricPrefix.MILLI;
 import static tec.uom.se.unit.Units.METRE;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import javax.xml.bind.JAXBException;
+
+import org.testng.annotations.Test;
+
+import de.r007.glabels.jaxb.adapters.UnitAdapter;
 
 public class UnitAdapterTest {
 	@Test

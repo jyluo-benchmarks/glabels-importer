@@ -1,11 +1,11 @@
 package de.r007.glabels.jaxb.elements;
 
-import de.r007.glabels.jaxb.elements.labels.AbstractLabel;
-import de.r007.glabels.jaxb.elements.labels.Rectangle;
-
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;
+
+import de.r007.glabels.jaxb.elements.labels.AbstractLabel;
+import de.r007.glabels.jaxb.elements.labels.Rectangle;
 
 public class TemplateEntry {
 	@XmlAttribute

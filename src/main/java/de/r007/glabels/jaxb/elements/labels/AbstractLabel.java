@@ -1,9 +1,9 @@
 package de.r007.glabels.jaxb.elements.labels;
 
-import de.r007.glabels.jaxb.elements.Layout;
-
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+
+import de.r007.glabels.jaxb.elements.Layout;
 
 public abstract class AbstractLabel {
 	@XmlAttribute

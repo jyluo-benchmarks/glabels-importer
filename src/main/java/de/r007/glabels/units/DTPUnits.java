@@ -1,11 +1,11 @@
 package de.r007.glabels.units;
 
+import static systems.uom.common.Imperial.INCH;
+
 import javax.measure.Unit;
 import javax.measure.format.UnitFormat;
 import javax.measure.quantity.Length;
 import javax.measure.spi.ServiceProvider;
-
-import static systems.uom.common.Imperial.INCH;
 
 public final class DTPUnits {
 	public static final Unit<Length> POINT = INCH.divide(72);

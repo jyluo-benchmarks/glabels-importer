@@ -1,16 +1,22 @@
 package de.r007.glabels.jaxb;
 
-import de.r007.glabels.jaxb.elements.Templates;
-import de.r007.glabels.jaxb.elements.labels.Rectangle;
-import org.testng.annotations.Test;
+import static de.r007.glabels.units.DTPUnits.POINT;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.notNullValue;
+
+import java.io.InputStream;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import java.io.InputStream;
 
-import static de.r007.glabels.units.DTPUnits.POINT;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+import de.r007.glabels.jaxb.elements.Templates;
+import de.r007.glabels.jaxb.elements.labels.Rectangle;
 
 public class TemplateTest {
 	@Test
